@@ -1,0 +1,5 @@
+colorama
+pytube
+tqdm
+os
+math
