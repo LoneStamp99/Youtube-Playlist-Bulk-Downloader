@@ -1,0 +1,34 @@
+1. Use PS2EXE
+PS2EXE is a PowerShell module that can compile a PS1 script into an EXE file.
+
+Install PS2EXE: Install-Module PS2EXE
+
+1.2. Then compile the script: PS2EXE-GUI .\ascii-art-launcher.ps1  or  PS2EXE .\ascii-art-launcher.ps1
+
+This will generate an EXE that can be distributed and run on other Windows machines.
+
+Including custom icon "PS2EXE -InputFile .\Youtube.ps1 -OutputFile Youtube.exe -Icon ./src/icon/icon.ico
+
+"
+
+Other method
+
+1. Use a Self-Extracting Archive
+You can package the PS1 script along with PowerShell into a self-extracting archive that will extract and launch the script when run.
+
+Use a tool like 7-Zip or WinRAR to create a self-extracting EXE with the PS1 and PowerShell inside.
+
+2. Use Win-PS2EXE
+Win-PS2EXE is another utility to convert PS1 to EXE. You can install it via: 
+1.1 Install-Script -Name Win-PS2EXE
+1.2 Win-PS2EXE -PS1 .\ascii-art-launcher.ps1 -Output .\launcher.exe
+
+3.  Compile C# Wrapper with PS1 Embedded
+You can create a C# wrapper app that launches PowerShell and executes the embedded PS1 script. This allows compiling to a native EXE
+
+Python Exe installer:
+
+pyinstaller --onefile --icon=iconicon.ico --add-data=iconicon.ico;icon --specpath=. About.py coreTubemp3.py coreTubeVid.py my_scripts.spec
+
+
+

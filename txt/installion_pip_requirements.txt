@@ -1,0 +1,3 @@
+Open cmd/then type.
+pip freeze > requirements.txt
+pip install -r requirements.txt

@@ -1,0 +1,1 @@
+pyinstaller --onefile --icon=iconicon.ico --add-data=iconicon.ico;icon --specpath=. About.py coreTubemp3.py coreTubeVid.py my_scripts.spec
